@@ -1,0 +1,22 @@
+{
+  "name": "iOSDesigns",
+  "version": "0.1.0",
+  "summary": "A short description of iOSDesigns.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/goushikkumar@gmail.com/iOSDesigns",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "goushikkumar@gmail.com": "goushik@appoets.com"
+  },
+  "source": {
+    "git": "https://github.com/goushikkumar@gmail.com/iOSDesigns.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSDesigns/Classes/**/*"
+}

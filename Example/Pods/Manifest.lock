@@ -1,0 +1,16 @@
+PODS:
+  - iOSDesigns (0.1.0)
+
+DEPENDENCIES:
+  - iOSDesigns (from `../`)
+
+EXTERNAL SOURCES:
+  iOSDesigns:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSDesigns: 8d3508858ce213da9e968874561d8b9ed5aea5fb
+
+PODFILE CHECKSUM: 42f254cc9b0750a87a4f99f40ddb0a72f5c21c10
+
+COCOAPODS: 1.5.0

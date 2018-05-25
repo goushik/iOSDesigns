@@ -1,0 +1,6 @@
+framework module iOSDesigns {
+  umbrella header "iOSDesigns-umbrella.h"
+
+  export *
+  module * { export * }
+}
