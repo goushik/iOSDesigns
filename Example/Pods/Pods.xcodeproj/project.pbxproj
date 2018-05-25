@@ -110,6 +110,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		0801142020B8101E00518692 /* Designs */ = {
+			isa = PBXGroup;
+			children = (
+				0801141D20B80DBF00518692 /* Classes */,
+			);
+			path = Designs;
+			sourceTree = "<group>";
+		};
 		324D3BFC6AC16F1F4B935237F7F0AB6F /* Pods-iOSDesigns_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +217,7 @@
 		BEED1FE1FDDE6BA820033D04836BB983 /* iOSDesigns */ = {
 			isa = PBXGroup;
 			children = (
-				0801141D20B80DBF00518692 /* Classes */,
+				0801142020B8101E00518692 /* Designs */,
 				D6C03FB1E3CB93288953536FD3CA0D8E /* Pod */,
 				78A01D9EAAA95319F986DB69B02A1BC2 /* Support Files */,
 			);
