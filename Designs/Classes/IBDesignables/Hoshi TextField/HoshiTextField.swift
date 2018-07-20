@@ -11,13 +11,13 @@ import UIKit
 /**
  An HoshiTextField is a subclass of the TextFieldEffects object, is a control that displays an UITextField with a customizable visual effect around the lower edge of the control.
  */
-open class HoshiTextField: TextFieldEffects {
+@IBDesignable open class HoshiTextField: TextFieldEffects {
     /**
      The color of the border when it has no content.
      
      This property applies a color to the lower edge of the control. The default value for this property is a clear color.
      */
-    @IBInspectable dynamic open var borderInactiveColor: UIColor? = .lightGray{
+    @IBInspectable dynamic open var borderInactiveColor: UIColor? {
         didSet {
             updateBorder()
         }
@@ -28,7 +28,7 @@ open class HoshiTextField: TextFieldEffects {
      
      This property applies a color to the lower edge of the control. The default value for this property is a clear color.
      */
-    @IBInspectable dynamic open var borderActiveColor: UIColor?  = .primary{
+    @IBInspectable dynamic open var borderActiveColor: UIColor? {
         didSet {
             updateBorder()
         }
@@ -36,7 +36,7 @@ open class HoshiTextField: TextFieldEffects {
     
     /**
      The color of the placeholder text.
-
+     
      This property applies a color to the complete placeholder string. The default value for this property is a black color.
      */
     @IBInspectable dynamic open var placeholderColor: UIColor = .black {
@@ -49,13 +49,13 @@ open class HoshiTextField: TextFieldEffects {
      The scale of the placeholder font.
      
      This property determines the size of the placeholder label relative to the font size of the text field.
-    */
+     */
     @IBInspectable dynamic open var placeholderFontScale: CGFloat = 0.65 {
         didSet {
             updatePlaceholder()
         }
     }
-
+    
     override open var placeholder: String? {
         didSet {
             updatePlaceholder()
@@ -73,7 +73,7 @@ open class HoshiTextField: TextFieldEffects {
     private let placeholderInsets = CGPoint(x: 0, y: 6)
     private let textFieldInsets = CGPoint(x: 0, y: 12)
     private let inactiveBorderLayer = CALayer()
-    private let activeBorderLayer = CALayer()    
+    private let activeBorderLayer = CALayer()
     private var activePlaceholderPoint: CGPoint = CGPoint.zero
     
     // MARK: - TextFieldEffects
@@ -101,14 +101,14 @@ open class HoshiTextField: TextFieldEffects {
                 self.animationCompletionHandler?(.textEntry)
             })
         }
-    
+        
         layoutPlaceholderInTextRect()
         placeholderLabel.frame.origin = activePlaceholderPoint
-
-		UIView.animate(withDuration: 0.4, animations: {
-			self.placeholderLabel.alpha = 1.0
-		})
-
+        
+        UIView.animate(withDuration: 0.4, animations: {
+            self.placeholderLabel.alpha = 1.0
+        })
+        
         activeBorderLayer.frame = rectForBorder(borderThickness.active, isFilled: true)
     }
     
@@ -159,7 +159,7 @@ open class HoshiTextField: TextFieldEffects {
         }
     }
     
-    private func layoutPlaceholderInTextRect() {        
+    private func layoutPlaceholderInTextRect() {
         let textRect = self.textRect(forBounds: bounds)
         var originX = textRect.origin.x
         switch self.textAlignment {
@@ -171,9 +171,9 @@ open class HoshiTextField: TextFieldEffects {
             break
         }
         placeholderLabel.frame = CGRect(x: originX, y: textRect.height/2,
-            width: placeholderLabel.bounds.width, height: placeholderLabel.bounds.height)
+                                        width: placeholderLabel.bounds.width, height: placeholderLabel.bounds.height)
         activePlaceholderPoint = CGPoint(x: placeholderLabel.frame.origin.x, y: placeholderLabel.frame.origin.y - placeholderLabel.frame.size.height - placeholderInsets.y)
-
+        
     }
     
     // MARK: - Overrides

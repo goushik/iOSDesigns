@@ -15,6 +15,7 @@
 		080732132101FE2800EAA299 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732102101FE2800EAA299 /* TextFieldEffects.swift */; };
 		080732142101FE2800EAA299 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732112101FE2800EAA299 /* HoshiTextField.swift */; };
 		080732152101FE2800EAA299 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732122101FE2800EAA299 /* TextField.swift */; };
+		08073219210215FE00EAA299 /* ViewAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08073218210215FD00EAA299 /* ViewAnimate.swift */; };
 		28F15E98262B8BC282B1F7CB1D811A96 /* Pods-iOSDesigns_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF7AA3596EC76413B78F58C3A3CD0 /* Pods-iOSDesigns_Example-dummy.m */; };
 		2A5003F4A916E6997762B75FE2B62A85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4D73710166D56CF3E03A7271F4EA9946 /* Pods-iOSDesigns_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C21FD619CF9D81A9049C8C45F747D98 /* Pods-iOSDesigns_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +54,7 @@
 		080732102101FE2800EAA299 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		080732112101FE2800EAA299 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		080732122101FE2800EAA299 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		08073218210215FD00EAA299 /* ViewAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimate.swift; sourceTree = "<group>"; };
 		1B9A6C50AF3BD094CC820C1B23E00787 /* Pods-iOSDesigns_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSDesigns_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C21FD619CF9D81A9049C8C45F747D98 /* Pods-iOSDesigns_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSDesigns_Example-umbrella.h"; sourceTree = "<group>"; };
 		1C5B95FB9BE86A11C52C948EF847112A /* iOSDesigns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSDesigns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 		0801141D20B80DBF00518692 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				080732162102004E00EAA299 /* Animations */,
 				080732012101EC8C00EAA299 /* IBDesignables */,
 			);
 			path = Classes;
@@ -193,6 +196,22 @@
 				080732102101FE2800EAA299 /* TextFieldEffects.swift */,
 			);
 			path = "Hoshi TextField";
+			sourceTree = "<group>";
+		};
+		080732162102004E00EAA299 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				08073217210214F200EAA299 /* View */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		08073217210214F200EAA299 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08073218210215FD00EAA299 /* ViewAnimate.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		324D3BFC6AC16F1F4B935237F7F0AB6F /* Pods-iOSDesigns_Example */ = {
@@ -465,6 +484,7 @@
 				8FA039B5E85CE3B86AFA7A88794CE2C1 /* iOSDesigns-dummy.m in Sources */,
 				080732152101FE2800EAA299 /* TextField.swift in Sources */,
 				0807320E2101FDD200EAA299 /* ModifiedVisualEffectView.swift in Sources */,
+				08073219210215FE00EAA299 /* ViewAnimate.swift in Sources */,
 				080732052101F81C00EAA299 /* ModifiedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

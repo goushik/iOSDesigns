@@ -24,17 +24,12 @@ public class ModifiedVisualEffectView : UIVisualEffectView {
     //MARK:- Blur Effect
     @IBInspectable
     var isBlurred : Bool = false {
-        
         didSet {
-            
             if isBlurred {
-                
                 let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
                 visualEffectView.frame = CGRect(origin: CGPoint.zero, size: frame.size)
                 self.addSubview(visualEffectView)
-                
             }
-            
         }
     }
     

@@ -67,27 +67,6 @@ class TextField: UITextField {
         
     }
     
-    
-    //MARK:- Button Text Color
-    
-    @IBInspectable
-    var textColorId : Int = 0{
-        
-        didSet {
-            
-            self.textColor = {
-                
-                if let color = Color.valueFor(id: textColorId){
-                    return color
-                } else {
-                    return textColor
-                }
-                
-            }()
-        }
-        
-    }
-    
      func addSubLayer(){
         
         layerr.removeFromSuperlayer()
