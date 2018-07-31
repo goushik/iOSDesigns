@@ -6,7 +6,7 @@
 import UIKit
 
 @IBDesignable
-class Label : UILabel {
+public class Label : UILabel {
     
     //MARK:- UnderLined
     @IBInspectable var isUnderLined : Bool = false {

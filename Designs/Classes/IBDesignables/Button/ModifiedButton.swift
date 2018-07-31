@@ -53,7 +53,7 @@ public class ModifiedButton : UIButton {
     }
     
     
-    private func updateAttributedText(){
+    public func updateAttributedText(){
         let mutableString = NSMutableAttributedString(string: String.removeNil(self.title(for: .normal)), attributes: [NSAttributedStringKey.font: self.titleLabel?.font ?? (UIFont(name: "Lato-Regular", size: 14.0))!])
         
         var attributes = [NSAttributedStringKey : Any]()
