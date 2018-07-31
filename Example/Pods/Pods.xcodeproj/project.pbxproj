@@ -10,7 +10,6 @@
 		0801141F20B80DED00518692 /* ModifiedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801141E20B80DED00518692 /* ModifiedView.swift */; };
 		080732052101F81C00EAA299 /* ModifiedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732042101F81C00EAA299 /* ModifiedImageView.swift */; };
 		080732082101F9D900EAA299 /* ModifiedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732072101F9D900EAA299 /* ModifiedButton.swift */; };
-		0807320B2101FC6C00EAA299 /* ModifiedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807320A2101FC6C00EAA299 /* ModifiedLabel.swift */; };
 		0807320E2101FDD200EAA299 /* ModifiedVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807320D2101FDD200EAA299 /* ModifiedVisualEffectView.swift */; };
 		080732132101FE2800EAA299 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732102101FE2800EAA299 /* TextFieldEffects.swift */; };
 		080732142101FE2800EAA299 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732112101FE2800EAA299 /* HoshiTextField.swift */; };
@@ -49,7 +48,6 @@
 		0801141E20B80DED00518692 /* ModifiedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedView.swift; sourceTree = "<group>"; };
 		080732042101F81C00EAA299 /* ModifiedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedImageView.swift; sourceTree = "<group>"; };
 		080732072101F9D900EAA299 /* ModifiedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedButton.swift; sourceTree = "<group>"; };
-		0807320A2101FC6C00EAA299 /* ModifiedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedLabel.swift; sourceTree = "<group>"; };
 		0807320D2101FDD200EAA299 /* ModifiedVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedVisualEffectView.swift; sourceTree = "<group>"; };
 		080732102101FE2800EAA299 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		080732112101FE2800EAA299 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			children = (
 				0807320F2101FE0900EAA299 /* Hoshi TextField */,
 				0807320C2101FCB300EAA299 /* Visual Effect View */,
-				080732092101FC5E00EAA299 /* Label */,
 				080732062101F9C200EAA299 /* Button */,
 				080732032101F6FE00EAA299 /* ImageView */,
 				080732022101F6EB00EAA299 /* View */,
@@ -170,14 +167,6 @@
 				080732072101F9D900EAA299 /* ModifiedButton.swift */,
 			);
 			path = Button;
-			sourceTree = "<group>";
-		};
-		080732092101FC5E00EAA299 /* Label */ = {
-			isa = PBXGroup;
-			children = (
-				0807320A2101FC6C00EAA299 /* ModifiedLabel.swift */,
-			);
-			path = Label;
 			sourceTree = "<group>";
 		};
 		0807320C2101FCB300EAA299 /* Visual Effect View */ = {
@@ -477,7 +466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				080732132101FE2800EAA299 /* TextFieldEffects.swift in Sources */,
-				0807320B2101FC6C00EAA299 /* ModifiedLabel.swift in Sources */,
 				080732082101F9D900EAA299 /* ModifiedButton.swift in Sources */,
 				080732142101FE2800EAA299 /* HoshiTextField.swift in Sources */,
 				0801141F20B80DED00518692 /* ModifiedView.swift in Sources */,
