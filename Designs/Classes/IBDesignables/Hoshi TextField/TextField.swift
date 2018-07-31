@@ -24,14 +24,15 @@ class TextField: UITextField {
     
     let layerr = CALayer()
 
+    /*
     //MARK:- PlaceHolder Color
-    
     @IBInspectable
     var placeHolderColor : UIColor = .black {
         didSet{
             self.attributedPlaceholder = NSAttributedString(string: String.removeNil(self.placeholder), attributes: [.foregroundColor : placeHolderColor])
         }
     }
+ */
     
     
     

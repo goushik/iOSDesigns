@@ -16,6 +16,7 @@ public class Label : UILabel {
         }
     }
     
+    /*
     //MARK:- Attributed String
     
     @IBInspectable var startLocation : Int = 0 {
@@ -54,5 +55,6 @@ public class Label : UILabel {
         mutableString.addAttributes(attributes, range: NSRange(location:startLocation,length:length))
         self.attributedText = mutableString
     }
+ */
     
 }

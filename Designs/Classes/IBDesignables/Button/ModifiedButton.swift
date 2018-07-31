@@ -21,9 +21,8 @@ public class ModifiedButton : UIButton {
         }
     }
     
-    
+    /*
     //MARK:- UnderLined
-    
     @IBInspectable var isUnderLined : Bool = false {
         
         didSet {
@@ -70,6 +69,7 @@ public class ModifiedButton : UIButton {
         mutableString.addAttributes(attributes, range: NSRange(location:startLocation,length:length))
         self.titleLabel?.attributedText = mutableString
     }
+    */
 }
 
 
