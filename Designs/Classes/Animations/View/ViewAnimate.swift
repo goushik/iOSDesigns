@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-public class ViewAnimate {
+open class ViewAnimate {
     
-    func animateIn(visualView : UIVisualEffectView?, animateView : UIView?, controllerView : UIView){
+    public func animateIn(visualView : UIVisualEffectView?, animateView : UIView?, controllerView : UIView){
         visualView?.isHidden = false
         controllerView.addSubview(animateView!)
         animateView?.center = controllerView.center
@@ -22,7 +22,7 @@ public class ViewAnimate {
         }
     }
     
-    func animateOut(visualView : UIVisualEffectView?, animateView : UIView?){
+    public func animateOut(visualView : UIVisualEffectView?, animateView : UIView?){
         UIView.animate(withDuration: 0.3, animations: {
             animateView?.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
             animateView?.alpha = 0
