@@ -8,8 +8,10 @@
 import Foundation
 import UIKit
 
-open class ViewAnimate {
+public class ViewAnimate {
     
+    public init() {}
+
     public func animateIn(visualView : UIVisualEffectView?, animateView : UIView?, controllerView : UIView){
         visualView?.isHidden = false
         controllerView.addSubview(animateView!)
