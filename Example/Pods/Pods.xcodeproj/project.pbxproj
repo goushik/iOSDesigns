@@ -15,6 +15,8 @@
 		080732142101FE2800EAA299 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732112101FE2800EAA299 /* HoshiTextField.swift */; };
 		080732152101FE2800EAA299 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080732122101FE2800EAA299 /* TextField.swift */; };
 		08073219210215FE00EAA299 /* ViewAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08073218210215FD00EAA299 /* ViewAnimate.swift */; };
+		0810C005211DA1AF0002A9E7 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0810C004211DA1AF0002A9E7 /* Animate.swift */; };
+		0810C008211DA3D00002A9E7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0810C007211DA3D00002A9E7 /* Toast.swift */; };
 		28F15E98262B8BC282B1F7CB1D811A96 /* Pods-iOSDesigns_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF7AA3596EC76413B78F58C3A3CD0 /* Pods-iOSDesigns_Example-dummy.m */; };
 		2A5003F4A916E6997762B75FE2B62A85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4D73710166D56CF3E03A7271F4EA9946 /* Pods-iOSDesigns_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C21FD619CF9D81A9049C8C45F747D98 /* Pods-iOSDesigns_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +55,8 @@
 		080732112101FE2800EAA299 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		080732122101FE2800EAA299 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		08073218210215FD00EAA299 /* ViewAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimate.swift; sourceTree = "<group>"; };
+		0810C004211DA1AF0002A9E7 /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
+		0810C007211DA3D00002A9E7 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		1B9A6C50AF3BD094CC820C1B23E00787 /* Pods-iOSDesigns_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSDesigns_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C21FD619CF9D81A9049C8C45F747D98 /* Pods-iOSDesigns_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSDesigns_Example-umbrella.h"; sourceTree = "<group>"; };
 		1C5B95FB9BE86A11C52C948EF847112A /* iOSDesigns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSDesigns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,7 @@
 		0801141D20B80DBF00518692 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0810C006211DA3C20002A9E7 /* Toast */,
 				080732162102004E00EAA299 /* Animations */,
 				080732012101EC8C00EAA299 /* IBDesignables */,
 			);
@@ -190,6 +195,7 @@
 		080732162102004E00EAA299 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				0810C003211DA1800002A9E7 /* Common Animations */,
 				08073217210214F200EAA299 /* View */,
 			);
 			path = Animations;
@@ -201,6 +207,22 @@
 				08073218210215FD00EAA299 /* ViewAnimate.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0810C003211DA1800002A9E7 /* Common Animations */ = {
+			isa = PBXGroup;
+			children = (
+				0810C004211DA1AF0002A9E7 /* Animate.swift */,
+			);
+			path = "Common Animations";
+			sourceTree = "<group>";
+		};
+		0810C006211DA3C20002A9E7 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				0810C007211DA3D00002A9E7 /* Toast.swift */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		324D3BFC6AC16F1F4B935237F7F0AB6F /* Pods-iOSDesigns_Example */ = {
@@ -470,8 +492,10 @@
 				080732142101FE2800EAA299 /* HoshiTextField.swift in Sources */,
 				0801141F20B80DED00518692 /* ModifiedView.swift in Sources */,
 				8FA039B5E85CE3B86AFA7A88794CE2C1 /* iOSDesigns-dummy.m in Sources */,
+				0810C005211DA1AF0002A9E7 /* Animate.swift in Sources */,
 				080732152101FE2800EAA299 /* TextField.swift in Sources */,
 				0807320E2101FDD200EAA299 /* ModifiedVisualEffectView.swift in Sources */,
+				0810C008211DA3D00002A9E7 /* Toast.swift in Sources */,
 				08073219210215FE00EAA299 /* ViewAnimate.swift in Sources */,
 				080732052101F81C00EAA299 /* ModifiedImageView.swift in Sources */,
 			);

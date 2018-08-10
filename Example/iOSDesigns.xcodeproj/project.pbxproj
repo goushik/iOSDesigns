@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085783232112DCC20009CB9E /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085783222112DCC20009CB9E /* SampleFramework.framework */; };
 		56FAC27934952C8C2888A3E1 /* Pods_iOSDesigns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF393B794A4880923A93C586 /* Pods_iOSDesigns_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -27,8 +28,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0857831F2112DAF60009CB9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		038822DE3B10B2026DE02F6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		085783222112DCC20009CB9E /* SampleFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SampleFramework.framework; sourceTree = "<group>"; };
 		36B6914C24CD012DA0D15A6E /* Pods-iOSDesigns_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDesigns_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDesigns_Example/Pods-iOSDesigns_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		55DCEEC7BE7FDEEBB51EADA2 /* Pods-iOSDesigns_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDesigns_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDesigns_Example/Pods-iOSDesigns_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5EB613AA9CDCE8C3F9ED7EDB /* iOSDesigns.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSDesigns.podspec; path = ../iOSDesigns.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -55,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				689EAB36E0ED16FC3CD9486E /* Pods_iOSDesigns_Example.framework in Frameworks */,
+				085783232112DCC20009CB9E /* SampleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +158,7 @@
 		B16FED2E3916C5EC25C0B413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				085783222112DCC20009CB9E /* SampleFramework.framework */,
 				B4BC6B759BCFA363DF03DABD /* Pods_iOSDesigns_Example.framework */,
 				FF393B794A4880923A93C586 /* Pods_iOSDesigns_Tests.framework */,
 			);
@@ -171,6 +188,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				064E814D1297AF9BE06C3F4C /* [CP] Embed Pods Frameworks */,
+				0857831F2112DAF60009CB9E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,7 +225,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -377,12 +395,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -430,12 +450,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -469,6 +491,10 @@
 			baseConfigurationReference = 36B6914C24CD012DA0D15A6E /* Pods-iOSDesigns_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOSDesigns/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +510,10 @@
 			baseConfigurationReference = 55DCEEC7BE7FDEEBB51EADA2 /* Pods-iOSDesigns_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOSDesigns/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
