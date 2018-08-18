@@ -12,7 +12,7 @@ public class Animate {
     
     public init() {}
     
-    public func setParallex(to object : AnyObject?) {
+    public func setParallex(to objects : [AnyObject]?) {
         let min = CGFloat(-20)
         let max = CGFloat(20)
         
@@ -29,7 +29,10 @@ public class Animate {
         
         let motionEffectGroup = UIMotionEffectGroup()
         motionEffectGroup.motionEffects = [xMotion,yMotion]
-        object?.addMotionEffect(motionEffectGroup)
+        
+        for object in objects! {
+            object.addMotionEffect(motionEffectGroup)
+        }
     }
     
 }

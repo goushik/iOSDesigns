@@ -125,7 +125,7 @@ public class ModifiedView : UIView {
     //MARK:- Shadow Offset
     
     @IBInspectable
-    var offsetShadow : CGSize {
+    override var offsetShadow : CGSize {
         get {
             return self.layer.shadowOffset
         }

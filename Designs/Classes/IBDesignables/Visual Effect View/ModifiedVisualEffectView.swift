@@ -120,7 +120,7 @@ public class ModifiedVisualEffectView : UIVisualEffectView {
     //MARK:- Shadow Offset
     
     @IBInspectable
-    var offsetShadow : CGSize {
+    override var offsetShadow : CGSize {
         get {
             return self.layer.shadowOffset
         }
@@ -129,3 +129,13 @@ public class ModifiedVisualEffectView : UIVisualEffectView {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+

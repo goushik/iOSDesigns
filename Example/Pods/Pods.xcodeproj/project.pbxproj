@@ -123,6 +123,7 @@
 		0801141D20B80DBF00518692 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0810C009211DB0EE0002A9E7 /* Image Functions */,
 				0810C006211DA3C20002A9E7 /* Toast */,
 				080732162102004E00EAA299 /* Animations */,
 				080732012101EC8C00EAA299 /* IBDesignables */,
@@ -223,6 +224,13 @@
 				0810C007211DA3D00002A9E7 /* Toast.swift */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		0810C009211DB0EE0002A9E7 /* Image Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Image Functions";
 			sourceTree = "<group>";
 		};
 		324D3BFC6AC16F1F4B935237F7F0AB6F /* Pods-iOSDesigns_Example */ = {
